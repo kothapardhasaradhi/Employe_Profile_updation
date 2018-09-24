@@ -3,7 +3,6 @@ package com.topgear.modal;
 public class AddJobForm {
 	
 	private int jobId;
-	private String	jobID;
 	private String	jobName;
 	private String	jobDescription;
 	private String	projectName;
@@ -20,12 +19,6 @@ public class AddJobForm {
 	}
 	public void setJobId(int jobId) {
 		this.jobId = jobId;
-	}
-	public String getJobID() {
-		return jobID;
-	}
-	public void setJobID(String jobID) {
-		this.jobID = jobID;
 	}
 	public String getJobName() {
 		return jobName;
