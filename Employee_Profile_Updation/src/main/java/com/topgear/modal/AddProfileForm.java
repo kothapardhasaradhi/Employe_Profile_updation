@@ -1,6 +1,15 @@
 package com.topgear.modal;
 
+
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+import org.springframework.data.annotation.Id;
+
 public class AddProfileForm {
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String profileId;
 	private String	firstName;
 	private String	lastName;
@@ -10,7 +19,9 @@ public class AddProfileForm {
 	private String	qualification;
 	private String	yearsOfExperience;
 	private String	gender;
+	@Id
 	private String	phoneNumber;
+	@Id
 	private String	emailID;
 	public String getProfileId() {
 		return profileId;

@@ -1,7 +1,12 @@
 package com.topgear.modal;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public class AddJobForm {
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int jobId;
 	private String	jobName;
 	private String	jobDescription;
